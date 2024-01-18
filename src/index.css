@@ -1,10 +1,9 @@
 :root {
-  --pink-color: #F28067;
-  --blue-color: #0084A8;
-  --gold-color: #D9A74A;
-  --gray-color: #DADADA;
+  --primary-color:#234c6e;
+  --secondary-color: #c05843;
+  --primary-hover: #497294;
+  --secondary-hover: #e67e69;
 }
-
 
 @font-face {
   font-family: "Nunito";
@@ -12,6 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 *{
   font-family: 'Nunito Sans', sans-serif;
 }
