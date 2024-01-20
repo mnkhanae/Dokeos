@@ -19,6 +19,7 @@ import Modal from "react-bootstrap/Modal";
 function NavbarComponent() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
+  const [sideBarOpen, setSideBarOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -37,18 +38,20 @@ function NavbarComponent() {
   return (
     <Navbar
       expand="lg"
-      className="bg-white px-5 d-flex justify-content-between w-100 py-3 shadow z-3"
+      className="bg-white px-2 px-md-5 d-flex justify-content-between w-100 py-3 shadow z-3"
     >
-      <Navbar.Brand
-        href="#home"
-        className="d-flex align-items-center justify-content-center"
-      >
-        <div className="navbar_nav_icon me-4">
+      <Navbar.Brand className="d-flex align-items-center justify-content-center">
+        <div
+          className={`navbar_nav_icon me-4 ms-2 ms-md-0 ${
+            sideBarOpen ? "align-items-start" : "align-items-end"
+          }`}
+          onClick={() => setSideBarOpen(!sideBarOpen)}
+        >
           <span></span>
-          <span className="mb-0"></span>
-          <span className="mb-0"></span>
+          <span></span>
+          <span></span>
         </div>
-        <img src={logo} alt="website logo" className="navbar_logo" />
+        <img src={logo} alt="website logo" className="navbar_logo d-none d-sm-block" />
       </Navbar.Brand>
 
       <div
@@ -58,7 +61,7 @@ function NavbarComponent() {
         <span>
           <IoPerson />
         </span>
-        <span className="">Learner</span>
+        <span className="d-none d-md-block">Learner</span>
         <span>
           <IoChevronDownOutline className="roles_icon" />
         </span>
@@ -76,7 +79,7 @@ function NavbarComponent() {
         )}
       </div>
 
-      <div className="d-flex gap-4">
+      <div className="d-flex align-items-center gap-2 gap-md-3">
         <div>
           <Button variant="transparent" onClick={handleNotificationsClick}>
             <IoNotificationsOutline className="navbar_icons_bell" />
@@ -123,14 +126,28 @@ function NavbarComponent() {
             <Modal.Header closeButton>
               <Modal.Title className="modal-header-profile">
                 <p className="modal-profile-title mb-0">admin user</p>
-                <p className="modal-profile-subtitle mb-0 fs-6">Learner, Trainer, Leader group, Manager</p>
-                </Modal.Title>
+                <p className="modal-profile-subtitle mb-0 fs-6">
+                  Learner, Trainer, Leader group, Manager
+                </p>
+              </Modal.Title>
             </Modal.Header>
             <Modal.Body className="modal-profile-text">
-            <p className="d-flex align-items-center gap-2 mb-4 mt-3"><IoIosSettings size={30}/>My settings</p>
-            <p className="d-flex align-items-center gap-2 mb-4"><IoDocumentTextOutline size={30} />LMS Terms of use</p>
-            <p className="d-flex align-items-center gap-2 mb-4"><MdCookie size={30} />Cookies</p>
-            <p className="d-flex align-items-center gap-2 mb-4"><GoSignOut size={30} />Sign Out</p>
+              <p className="d-flex align-items-center gap-2 mb-4 mt-3">
+                <IoIosSettings size={30} />
+                My settings
+              </p>
+              <p className="d-flex align-items-center gap-2 mb-4">
+                <IoDocumentTextOutline size={30} />
+                LMS Terms of use
+              </p>
+              <p className="d-flex align-items-center gap-2 mb-4">
+                <MdCookie size={30} />
+                Cookies
+              </p>
+              <p className="d-flex align-items-center gap-2 mb-4">
+                <GoSignOut size={30} />
+                Sign Out
+              </p>
             </Modal.Body>
           </Modal>
         </div>
