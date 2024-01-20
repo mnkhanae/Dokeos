@@ -1,3 +1,4 @@
+
 :root {
   --primary-color:#234c6e;
   --secondary-color: #c05843;
@@ -5,16 +6,7 @@
   --secondary-hover: #e67e69;
 }
 
-@font-face {
-  font-family: "Nunito";
-  src: url("./Assets/Fonts/Nunito.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 *{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
-
-
 

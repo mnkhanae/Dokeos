@@ -1,14 +1,14 @@
 
 import './App.css'
-import Navbar from './Layouts/Navbar'
+import Layout from "./Layouts/Layout/Layout";
 
 function App() {
  
 
   return (
-    <>
-     <Navbar/>
-    </>
+    <section className="dashboard_content">
+    <Layout/>
+    </section>
   )
 }
 

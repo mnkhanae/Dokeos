@@ -1,0 +1,160 @@
+.navbar_logo {
+    width: 10rem;
+    height: auto;
+}
+
+
+.navbar_profile {
+    width: 3rem;
+    height: auto;
+}
+
+.navbar_icons {
+    width: 2rem;
+    height: auto;
+    color: balck;
+}
+
+.navbar_icons_bell{
+    color:#767676;
+    width: 2.5rem;
+    height: auto;
+}
+
+.navbar_nav_icon {
+  
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.navbar_nav_icon  span {
+    background: rgb(118, 118, 118);
+    width: 22px;
+    height: 4px;
+    border-radius: 10px;
+}
+.navbar_nav_icon span:first-child {
+    top: 12px;
+}
+
+.navbar_nav_icon  span:nth-child(2) {
+    top: 20px;
+    transform: scaleX(0.8);
+    transform-origin: right center;
+    transition: transform-origin 0.4s ease-in-out 0s, -webkit-transform-origin 0.4s ease-in-out 0s;
+}
+
+
+/*Dropdown Role*/
+.navbar_roles {
+    color: rgb(130, 130, 130);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+    border-radius: 10px; 
+    margin-top: 50px;
+    width:400px;
+    height:350px; 
+    left: 700px;
+    opacity: 0.5; 
+    transform: translateY(-10px); 
+    transition: opacity 0.3s, transform 0.3s; /
+}
+
+.dropdown-content ul {
+    list-style: none;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+  }
+  
+.dropdown-content li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.dropdown-content li:hover {
+    color:rgb(80, 80, 80); 
+    transform: scale(1.04);
+}
+
+.d-flex.open .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Notifications Modal */
+.modal-notification {
+    background-color: transparent !important;
+  }
+  
+  .modal-notification .modal-content {
+    background-color: transparent !important; 
+    border: none; 
+    border-radius: 25px!important;
+  }
+  
+  .modal-notification .modal-dialog {
+    margin-right: 170px; 
+    margin-top:80px;
+    max-width: 45%;
+  }
+  
+  .modal-notification .modal-header{
+    background-color: #f2f2f2;
+  }
+  .modal-notification .modal-body,
+  .modal-notification .modal-footer {
+    background-color: #fff; 
+  }
+
+  .custom-modal-text{
+      color: var(--primary-color);
+      }
+  
+
+/* Profile Modal */
+.modal-profile{
+    font-family: 'Nunito', sans-serif;
+}
+.modal-profile-title{
+    color: var(--primary-color);
+}
+.modal-profile-subtitle{
+    color: #767676;
+}
+.modal-header-profile{
+    height: 60px;
+}
+.modal-profile .modal-dialog {
+    margin-right: 40px; 
+    margin-top:80px;
+    max-width: 22%;
+  }
+.modal-profile .modal-content {
+    padding: 0 20px;
+    border: none; 
+    border-radius: 15px!important;
+    box-shadow:
+  }
+.modal-profile-text{
+  color:#767676;
+  font-size:1.2rem;
+}
+.modal-profile-text p:hover{
+    color:rgb(80, 80, 80); 
+    transform: scale(1.02);
+}
