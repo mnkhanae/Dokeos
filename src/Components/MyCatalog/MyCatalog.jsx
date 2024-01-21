@@ -8,7 +8,7 @@ export default function MyCatalog() {
   
   return (
     <>
-    <div className="d-flex justify-content-start gap-5">
+    <div className="d-flex flex-column flex-sm-row justify-content-start gap-5 pb-5 mb-5">
     {myCatalog.map((catalog, index) => (
         <Col xs={12} md={6} lg={4} key={index}>
           <CardCatalog

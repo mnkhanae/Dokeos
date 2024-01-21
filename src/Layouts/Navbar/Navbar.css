@@ -160,3 +160,16 @@
         width: 1.8rem;
     }
 }
+
+@media screen and (max-width: 600px){
+    .modal-profile .modal-dialog {
+        margin-right:0px; 
+        margin-top:80px;
+        max-width: 82%;
+      }
+      .modal-notification .modal-dialog {
+        margin-right: 0px; 
+        margin-top:80px;
+        max-width: 100%;
+      }
+}

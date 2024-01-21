@@ -1,4 +1,3 @@
-
 import CardTemplate from "../../Global/CardTemplate/CardTemplate";
 import Col from "react-bootstrap/Col";
 import myCourses from "../../Data/myCourses";

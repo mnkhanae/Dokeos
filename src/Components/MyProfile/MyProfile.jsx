@@ -9,10 +9,10 @@ const MyProfile = () => {
   const percentage = 77;
   const percent= 23;
   return (
-    <div>
-      <div className="d-flex gap-4 pt-5">
+    <div className="pb-5 mb-5">
+      <div className="d-flex flex-column flex-sm-row gap-4 pt-5">
         <div
-          className="d-flex gap-3 align-items-center shadow rounded-3"
+          className="d-flex flex-column flex-sm-row gap-3 align-items-center shadow rounded-3"
           style={{ padding: "5rem 6rem" }}
         >
           <div className="position-relative">
@@ -36,7 +36,7 @@ const MyProfile = () => {
 
         <div className="text-secondary">
           <div className="row gy-5">
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <div
                 className="shadow rounded-3 py-4"
                 style={{ padding:'6rem 4rem'}}
@@ -54,7 +54,7 @@ const MyProfile = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <div
                 className="shadow rounded-3 py-4"
                 style={{ paddingLeft:'3rem', paddingRight:"3rem"}}
@@ -71,7 +71,7 @@ const MyProfile = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <div
                 className="shadow rounded-3 py-4"
                 style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
@@ -99,7 +99,7 @@ const MyProfile = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <div
                 className="shadow rounded-3 py-4"
                 style={{ paddingLeft: "3rem", paddingRight: "3rem" }}

@@ -78,12 +78,14 @@
 @media only screen and (max-width: 600px) {
   .sidbar {
     bottom: 0;
-    width: 4.7rem;
+    width: 5rem;
     height: 5rem;
+    padding-left:1rem;
   }
 
   .sidbar-nav {
     flex-direction: row;
+
   }
 
   .nav-link {
