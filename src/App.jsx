@@ -1,10 +1,10 @@
 import "./App.css";
-import MyCatalog from "./Components/MyCatalog/MyCatalog";
-import MyCertificates from "./Components/MyCertificates/MyCertificates";
-import MyCourses from "./Components/MyCourses/MyCourses";
-import MyPlacementTest from "./Components/MyPLacementsTest/MyPlacementTest";
-import MyProfile from "./Components/MyProfile/MyProfile";
-import Layout from "./Layouts/Layout/Layout";
+import MyCatalog from "./components/MyCatalog/MyCatalog";
+import MyCertificates from "./components/MyCertificates/MyCertificates";
+import MyCourses from "./components/MyCourses/MyCourses";
+import MyPlacementTest from "./components/MyPLacementsTest/MyPlacementTest";
+import MyProfile from "./components/MyProfile/MyProfile";
+import Layout from "./layouts/Layout/Layout";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
