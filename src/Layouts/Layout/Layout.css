@@ -2,5 +2,6 @@
     text-transform: capitalize;
 }
 .content {
-    overflow: auto;
+    overflow: scroll;
+    width:80%;
 }

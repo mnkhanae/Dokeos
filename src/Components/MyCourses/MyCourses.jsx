@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
-import CardTemplate from "../../Global/Card";
+
+import CardTemplate from "../../Global/CardTemplate/CardTemplate";
 import Col from "react-bootstrap/Col";
 import myCourses from "../../Data/myCourses";
 
@@ -7,7 +7,7 @@ export default function MyCourses() {
   return (
     <>
       {myCourses.map((course, index) => (
-        <Col xs={3} key={index}>
+        <Col xs={12} md={6} lg={4} key={index}>
           <CardTemplate
             title={course.title}
             progress={course.progress}

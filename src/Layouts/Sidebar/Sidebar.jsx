@@ -41,7 +41,7 @@ export default function Sidebar() {
   const path = location.pathname.substring(1);
 
   return (
-    <nav className="sidbar bg-white pt-lg-5 position-absolute z-2">
+    <nav className="sidbar bg-white pt-lg-5 z-2">
       <ul className="sidbar-nav">
         {links.map((link, index) => (
           <li

@@ -1,63 +1,15 @@
 export default [
     {
       image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D F",
-      title: "Corrective and preventive actions",
-      progress: 60,
+        "https://dokeos-prod.s3-eu-west-1.amazonaws.com/upload/thomas/cropped_image/file/19/thumb_markus-spiske-104910.jpg?X-Amz-Expires=14400&X-Amz-Date=20240120T155630Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJOPXHA3FNQNLSMFA/20240120/eu-west-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=a5b4baf273073a22e019d40621bcc471aa4ff74f54bb03e95c2879b3cfd7e7a1",
+      title: "Good manufacturing",
+      subtitle: "1 course"
+
     },
     {
       image:
-        "https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://dokeos-prod.s3-eu-west-1.amazonaws.com/upload/thomas/cropped_image/file/552/thumb_pharma11.jpg?X-Amz-Expires=14400&X-Amz-Date=20240120T155630Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJOPXHA3FNQNLSMFA/20240120/eu-west-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=49806e03458f82011a88473c6020ac939638e93aa8725f767a7a5bde13cb01b2",
       title: "Quality management principles",
-      progress: 80,
+      subtitle: "4 courses",
     },
-    {
-      image:
-        "https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Risk assessment and management",
-      progress: 75,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1523289333742-be1143f6b766?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Supplier evaluation and management",
-      progress: null,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D F",
-      title: "Root cause analysis",
-      progress: 70,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Statistical process control",
-      progress: 85,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Document control",
-      progress: 65,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D F",
-      title: "Internal audits",
-      progress: 95,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Continual improvement",
-      progress: 75,
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Change management",
-      progress: 80,
-    },
-  ];
-  
+]

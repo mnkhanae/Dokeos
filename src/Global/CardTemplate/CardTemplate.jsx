@@ -1,10 +1,13 @@
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Card from "react-bootstrap/Card";
 
-function CardTemplate({ image, title, progress }) {
+function CardTemplate(Props) {
+
+  const{ image, title, progress } = Props
+
   return (
     <Card className="rounded-4 border-0 shadow mt-5 h-100 w-100">
-      <Card.Img variant="top" src={image} />
+      <Card.Img style={{height: "12rem"}} variant="top" src={image} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
       </Card.Body>

@@ -1,21 +1,23 @@
-import { useLocation } from "react-router-dom";
-import CardTemplate from "../../Global/Card";
+import CardPlacements from "../../Global/CardPlacements/CardPlacements";
 import Col from "react-bootstrap/Col";
 import myPlacements from "../../Data/myPlacements";
 
 export default function MyPlacementTest() {
   return (
     <>
-      {myPlacements.map((course, index) => (
-        <Col xs={3} key={index}>
-          <CardTemplate
-            title={course.title}
-            progress={course.progress}
-            image={course.image}
+     <div className="d-flex justify-content-start gap-5 px-5">
+      {myPlacements.map((placement, index) => (
+         <Col xs={12} md={6} lg={4} key={index}>
+          <CardPlacements
+            title={placement.title}
+            subtitle={placement.subtitle}
+            text={placement.text}
+            progress={placement.progress}
             key={index}
           />
         </Col>
       ))}
+        </div>
     </>
   );
 }

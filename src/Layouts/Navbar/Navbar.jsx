@@ -11,7 +11,7 @@ import { MdCookie } from "react-icons/md";
 import { IoIosSettings } from "react-icons/io";
 import { GoSignOut } from "react-icons/go";
 
-import logo from "../../Assets/Media/logo.png";
+import logo from "../../assets/media/logo.png";
 import "../Navbar/Navbar.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";

@@ -16,10 +16,10 @@ export default function Layout(Props) {
   return (
     <div className="vw-100">
       <Navbar />
-      <div className="w-100 vh-100 position-relative">
+      <div className="w-100 vh-100 d-flex">
         <Sidebar />
-        <div className="py-5 h-100" style={{ paddingLeft: "22rem" }}>
-          <Container fluid className="h-100 bg-white py-4 px-5 content">
+        <div className="py-5 h-100 d-flex w-100">
+          <Container className="h-100 bg-white py-4 px-5 content pb-5">
             <div className="w-full px-2">
               <h1 className="fw-bold text-capitalize">{title}</h1>
             </div>
