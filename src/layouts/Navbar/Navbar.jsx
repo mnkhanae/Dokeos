@@ -16,10 +16,9 @@ import "./Navbar.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function NavbarComponent() {
+function NavbarComponent({sideBarOpen, setSideBarOpen}) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
-  const [sideBarOpen, setSideBarOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);

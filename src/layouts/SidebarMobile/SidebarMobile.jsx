@@ -5,7 +5,7 @@ import {
   GrAchievement,
   GrBarChart,
 } from "react-icons/gr";
-import "./Sidebar.css";
+import "./SidebarMobile.css";
 import { Link, useLocation } from "react-router-dom";
 
 const links = [
@@ -36,20 +36,20 @@ const links = [
   },
 ];
 
-export default function Sidebar(Props) {
+export default function SidebarMobile(Props) {
   const {sidebarOpen} = Props;
   const location = useLocation();
   const path = location.pathname.substring(1);
 
   return (
-    <nav className={` sidbar bg-white pt-lg-5 z-2 d-md-block d-none ${sidebarOpen && "full-width"}`}>
-      <ul className="sidbar-nav">
+    <nav className={`${sidebarOpen ? 'hide-sidebar': 'open-sidebar'} sidebar-mobile bg-white pt-lg-5 z-2 d-md-none`}>
+      <ul className="sidebar-mobile-nav">
         {links.map((link, index) => (
           <li
-            className={`nav-item ${link.to == path && "sidebar-item-active"}`}
+            className={`nav-item ${link.to == path && "sidebar-mobile-item-active"}`}
             key={index}
           >
-            <Link to={link.to} className="nav-link sidbar_link">
+            <Link to={link.to} className="nav-link sidbar-mobile_link">
               <span
                 className={`${
                   link.to == path ? "link-icon-active" : "link-icon"
@@ -59,7 +59,7 @@ export default function Sidebar(Props) {
               </span>
               <span
                 className={`${
-                  link.to == path ? "link-text-active" : "link-text"
+                  link.to == path ? "link-text-active-mobile" : "link-text-mobile"
                 }`}
               >
                 {link.text}
